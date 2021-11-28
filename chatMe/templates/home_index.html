@@ -1,0 +1,26 @@
+{% load static %}
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/chat.js' %}"></script>
+    </head>
+
+    <body>
+    <div class="section gray lighten-3" style="background-color: gray;">
+            <div class="container white-text center-align text">
+              <h2>A Simple Chat Application</h2>
+            </div>
+    </div>
+    {% include 'alertM.html' %}
+    {% block body %}
+        {% include 'main.html' %}
+    {% endblock %}
+    </body>
+
+  </html>

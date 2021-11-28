@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000; !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000; !important;
+    box-shadow: 0 1px 0 0 #000; !important;
+}
+
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #000; !important;
+    box-shadow: 0 1px 0 0 #000; !important;
+}
+
+.field {
+  width: 40%;
+  position: relative;
+  left: 30%;
+}
+
+.create {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    background: gray;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 964px) {
+   .field {
+     width: 70%;
+     left: 10%;
+   }
+}
+
+@media screen and (max-width: 390px) {
+   .field {
+     width: 90%;
+     left: 5%;
+   }
+
+   .container h2 {
+      font-size: 1.6rem;
+   }
+}
+
+.image-body {
+   position: relative;
+   left: 20%;
+   width: 50%;
+}
+
+.image-head img {
+   width: 300px;
+   border-radius: 10px 10px;
+   margin-bottom: 3%;
+}
+
+.heady h1 {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+@media screen and (max-width: 964px) {
+   .image-body {
+     width: 70%;
+     left: 15%;
+   }
+
+}
+
+@media screen and (max-width: 415px) {
+   .image-head img {
+     width: 100%;
+   }
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    text-align: center;
+}

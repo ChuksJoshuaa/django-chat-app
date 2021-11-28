@@ -1,0 +1,41 @@
+
+
+        <div class="container">
+            <div class="row">
+            <div class="col s12 m8 l6 offset-m2 offset-l3">
+                <div class="section center-block">
+                <div>
+                    {% block form %}
+                    <h4>Login</h4>
+                    <form id="login-form" class="form-group" method="post">{% csrf_token %}
+                        <div class="col-md-6 input-col">
+                             <div>
+                                <label>username</label>
+                                <input data-val="true" data-val-required="required" id="id_username" name="username" type="text" value="">
+                                <span class="field-validation-valid text-danger" data-valmsg-replace="true"></span>
+                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 input-col" style="position: relative; left: 2%; width: 96%;">
+                                <label>password</label>
+                                <input data-val="true" data-val-required="required" id="id_password" name="password" type="password">
+                                <span class="field-validation-valid text-danger" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col s8">
+                                <a href="{% url 'register' %}" style="color: gray">Register</a>
+                            </div>
+                            <div class="col s4">
+                                <div class="right">
+                                    <button class="btn waves-effect waves-light pull-s12" style="background-color: gray">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    {% endblock %}
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>

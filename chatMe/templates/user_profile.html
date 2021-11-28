@@ -1,0 +1,33 @@
+{% extends "my_base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block name %}
+<body style="background-color: white;">
+ <div class="image-body">
+     <a class="btn btn-secondary" href="{% url 'chats' %}" id="back"><i class="fas fa-chevron-left"></i></a>
+     <h1 style="margin-bottom: 2%;"></h1>
+   <div class="image-head">
+       {% if user.profile.image %}
+           <img src="{{ user.profile.image.url }}">
+       {% else %}
+          <img  src="{% static 'media/default.jpg' %}">
+       {% endif %}
+        <div class="heady">
+         <h2><i class="fa fa-user" aria-hidden="true"> {{ user.username }} </i></h2>
+        <p><i class="fa fa-envelope" aria-hidden="true"> {{ user.email }} </i></p>
+        </div>
+   </div>
+   <form action="." method="POST" enctype="multipart/form-data">{% csrf_token %}
+         <div class="income">
+             <br>
+                {{u_form|crispy}}
+                {{p_form|crispy}}
+             <br>
+             <div><button class="btn btn-secondary" type="submit">Update</button></div>
+         </div>
+   </form>
+ </div>
+</body>
+{% endblock %}
+
