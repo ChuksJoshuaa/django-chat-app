@@ -18,7 +18,7 @@ Chat app (Full Stack Frameworks with Django Project)
 
 - [Bootstrap](https://getbootstrap.com/) - Open source toolkit for developing with HTML, CSS, and JS.
   
-- [MaterialUi](https://mui.com) - is the legacy styling solution for MUI. It is deprecated in v5. It depends on JSS as a styling solution.
+- [MaterialUi](https://mui.com) - is the legacy styling solution for MUI. It is deprecated in v5. It depends on JSS as a styling solution..
 
 ## Getting started
 
