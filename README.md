@@ -22,7 +22,7 @@ Chat app (Full Stack Frameworks with Django Project)
 
 ## Getting started
 
-- Clone the repo and cd into the project directory.
+- Clone the repo and cd into the project directory..
 
 - Ensure you have Python 3 and Postgres installed and create a virtual environment and activate it..
 
