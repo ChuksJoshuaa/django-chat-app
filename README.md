@@ -1,6 +1,6 @@
 Chat app (Full Stack Frameworks with Django Project)
 
-> > Fully reponsive Chat Application built with django, javascript, materialUi, bootstrap4, html and css.
+> > Fully reponsive Chat Application built with django, javascript, materialUi, bootstrap4, html and css..
 
 <img src="https://res.cloudinary.com/chuksmbanaso/image/upload/v1638114513/media/Screenshot_21_lnammt.png" title="Chat App Django" alt="">
 
